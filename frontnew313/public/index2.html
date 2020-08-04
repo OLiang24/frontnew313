@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.0.1">
+    <title>Checkout example · Bootstrap</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/checkout/">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/form-validation.css">
+    <link rel="stylesheet" href="css/form-validation.js">
+    <!-- Bootstrap core CSS -->
+    <link href="../assets/dist/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="form-validation.css" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+    <div class="container">
+        <div class="py-5 text-center">
+           
+            <i class="fas fa-car-side fa-10x text-primary"></i>
+            <h2>ใบสั่งพนักงานจราจรหรือพนักงานเจ้าหน้าที่</h2>
+        </div>
+
+        <label>ชื่อผู้ขับขี่,เจ้าของหรือผู้ครอบครอง</label>
+        <div class="container mb-3">
+            <div class="mb-3">
+                <input type="text" class="form-control" id="username">
+            </div>
+        </div>
+        <label>ที่อยู่</label>
+        <div class="container mb-3">
+            <div class="mb-3">
+                <input type="text" class="form-control" id="username">
+            </div>
+        </div>
+        <label>ข้อหา</label>
+        <div class="container mb-3">
+            <div class="mb-3">
+                <input type="text" class="form-control" id="username">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <label for="cc-name">ความเร็วที่กฎหมายกำหนด(กม./ชม.)</label>
+                <input type="text" class="form-control" id="cc-name" placeholder="" required>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="cc-name">ความเร็วที่ตรวจจับ(กม./ชม.)</label>
+                <input type="text" class="form-control" id="cc-name" placeholder="" required>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="cc-name">ช่องทางเดินรถ</label>
+                <input type="text" class="form-control" id="cc-name" placeholder="" required>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="cc-name">หมายเลขทะเบียนรถ</label>
+                <input type="text" class="form-control" id="cc-name" placeholder="" required>
+            </div>
+        </div>
+
+        <div>
+            อาศัยอำนาจตามความในมาตรา ๑๔๐ วรรคหนึ่ง แห่ง พ.ร.บ.จราจรทางบก พ.ศ. ๒๕๒๒
+            ซึ่งแก้ไขเพิ่มเติมโดย พ.ร.บ.จราจรทางบก (ฉบับที่ ๙) พ.ศ. ๒๕๕๗ และมาตรา ๑๔๑ แห่ง
+            พ.ร.บ.จราจรทางบก พ.ศ. ๒๕๒๒ ซึ่งแก้ไขเพิ่มเติมโดย พ.ร.บ.จราจรทางบก (ฉบับที่ ๑๑)
+            พ.ศ. ๒๕๕๙ ให้ผู้ขับขี่หรือเจ้าของรถหรือผู้ครอบครองรถ ไปชำระค่าปรับตาม <b>ข้อกำหนด
+                สำนักงานตำรวจแห่งชาติ</b> ต่อพนักงานสอบสวน หรือชำระด้วยวิธีอื่นใดตามที่ระบุไว้
+            ด้านหลังใบสั่งนี้
+        </div>
+        <div class="py-1 text-center">
+            <label for=""> <b>โปรดอ่านคำเตือนและวิธีการชำระค่าปรับด้านหลัง</b></label>
+        </div>
+
+        <label for="">ผู้ออกใบสั่ง</label>
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <label for="cc-name">ชื่อ</label>
+                <input type="text" class="form-control" id="cc-name"
+                    placeholder="---------------------------ชื่อ-นามสกุล---------------------------" required>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="cc-name">รหัส</label>
+                <input type="text" class="form-control" id="cc-name"
+                    placeholder="-------------------------------รหัส------------------------------" required>
+            </div>
+        </div>
+
+        <label for="">หน่วยงานผู้ออกใบสั่ง</label>
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <label for="cc-name">ที่อยู่</label>
+                <input type="text" class="form-control" id="cc-name" placeholder="" required>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="cc-name">เบอร์โทร</label>
+                <input type="text" class="form-control" id="cc-name" placeholder="" required>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="cc-name">ชื่อผู้รับ</label>
+                <input type="text" class="form-control" id="cc-name" placeholder="" required>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="cc-name">ที่อยู่ผู้รับ</label>
+                <input type="text" class="form-control" id="cc-name" placeholder="" required>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <label for="cc-name">เลขที่ใบสั่ง</label>
+                <input type="text" class="form-control" id="cc-name" placeholder="" required>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="cc-name">วันเวลากระทำผิด</label>
+                <input type="text" class="form-control" id="cc-name" placeholder="" required>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="cc-name">จำนวนค่าปรับ</label>
+                <input type="text" class="form-control" id="cc-name" placeholder="" required>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="cc-name">วันครบกำหนดชำระ</label>
+                <input type="text" class="form-control" id="cc-name" placeholder="" required>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="cc-name">คะแนนที่ถูกบันทึกเดิม</label>
+                <input type="text" class="form-control" id="cc-name" placeholder="" required>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="cc-name">คะแนนที่ถูกบันทึกครั้งนี้</label>
+                <input type="text" class="form-control" id="cc-name" placeholder="" required>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="cc-name">คะแนนที่ถูกบันทึกรวม</label>
+                <input type="text" class="form-control" id="cc-name" placeholder="" required>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="cc-name">สถานะใบอนุญาตขับขี่</label>
+                <input type="text" class="form-control" id="cc-name" placeholder="" required>
+            </div>
+        </div>
+        <div class="py-1 text-center">
+            <label for=""> <b>พยานหลักฐาน</b></label> <br>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
+                </div>
+                <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="inputGroupFile01"
+                        aria-describedby="inputGroupFileAddon01">
+                    <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+        <a class="back" href="index.html">ย้อนกลับ</a>
+    </div>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+
+</html>
